@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-black">
+
+<!-------------------------------------
+header
+-------------------------------------->
+
+    <header>
+        <h1 class="text-center text-5xl text-white  mt-5 mb-2">First Security Islami <span class="text-pink-600 text-5xl">Bank Limited</span></h1>
+        <p class="text-2xl text-white text-center mb-10">Head <span class="text-pink-600">Bance</span></p>
+    </header>
+<main class="w-3/4 mx-auto">
+    <section class="text-white">
+
+<!-------------------------------------
+Bank Info
+-------------------------------------->
+
+        <h1 class="text-3xl mb-7 text-center"> Hi Sir,<br> <span class="text-pink-600">It's Your Account.</span></h1>      
+        <h1 class="text-3xl mb-7"> Your Account Details :</h1>        
+        <h1 class="text-3xl">Account Number : 0000 5223 4560 5678.</h1>
+        <h2 class="text-3xl">Account Name : <span class="text-pink-700 text-3xl">Maynuddin Bhuiyan.</span>.</h2>
+        <h2 class="text-3xl">E-mail: maynuddin14grm@gmail.com.</h2>
+        <h2 class="text-3xl">Phone: 019 08145097.</h2>
+        <h2 class="text-3xl">04/143.</h2>      
+        <h2 class="text-3xl mt-10 mb-10">Your Money <span class="text-red-700">Deposit</span> And <span class="text-yellow-700">Withdraw</span>  Your <span class="text-red-400">Reduce Balance</span> Info : </h2>
+
+
+<!-------------------------------------
+Deposit & Withdraw & Reduce Balance
+-------------------------------------->
+
+        <div class="grid grid-cols-3 gap-4 ">
+    <div class="bg-red-700 text-center px-10 py-20 rounded-2xl">
+        <h1 class="text-2xl mb-4">Your Deposit</h1>
+        <h3 class="text-3xl">$ <span id="deposit_taka">000</span> </h3>
+    </div>
+    <div class="bg-yellow-700 text-center px-10 py-20 rounded-2xl">
+        <h1 class="text-2xl mb-4">Your Withdraw</h1>
+        <h3 class="text-3xl">$<span id="withdraw_blance">000</span> </h3>
+    </div>
+    <div class="bg-red-400 text-center px-10 py-20 rounded-2xl">
+        <h1 class="text-2xl mb-4">Reduce Balance</h1>
+        <h3 class="text-3xl">$<span id="balance_total">1250</span> </h3>
+    </div>
+</div>
+    </section>
+
+
+<!------------------------------------------
+Deposit & Withdraw & Reduce Balance Button
+------------------------------------------->
+
+<section>
+<div class="grid grid-cols-2 gap-2">
+    <div class="p-10 bg-green-600 m-10 rounded-2xl text-white">
+        <h3 class="text-2xl  p-2">Please Deposit</h3>
+    <input id="deposit_input" class="block w-4/5 border-2 p-1 border-red-500 rounded m-1 text-yellow-700" type="text" placeholder="$ Deposit Your Amount">    
+    <button id="deposit_button" class="bg-purple-600  rounded text-white text-1xl border-2 rounded border-pink-50 p-2 m-1 mt-3" >Deposit</button>
+    </div>
+
+    <div class="p-10 bg-pink-700 m-10 rounded-2xl text-white">
+        <h3 class="text-2xl  p-2">Please Withdraw</h3>
+    <input id="withdraw_input" class="block w-4/5 border-2 p-1 border-red-500 rounded m-1 text-yellow-700" type="text" placeholder="$ Withdraw Your Amount">    
+    <button id="withdraw_button" class="bg-purple-600  rounded text-white text-1xl border-2 rounded border-pink-50 p-2 m-1 mt-3" >Withdraw</button>
+        </div>
+            </div>
+                </section>
+                    </main>
+
+
+<script src="js/bank.js"></script>
+</body>
+    </html>
